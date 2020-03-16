@@ -20,7 +20,6 @@ func Decode(in io.Reader, out io.Writer) error {
 
 //DecodeMessage method decode one FAST message from input in.
 func DecodeMessage(in io.Reader) (string, error) {
-
 	_, err := DecodePMap(in)
 	if err != nil {
 		return "", err
